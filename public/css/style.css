@@ -15,7 +15,7 @@
   src: url('../fonts/Cairo-Regular.ttf');
 } */
 :root {
-  --fontFamily: 'cairo-400';
+  /* --fontFamily: 'cairo-400'; */
   --whiteColor: rgba(255, 255, 255, 1);
   --blackColor: rgba(18, 18, 18, 1);
   --secondaryBlack: rgba(62, 72, 82, 1);
@@ -37,13 +37,13 @@ body {
   padding: 0;
   margin: 0;
   /* font-size: var(--fontSize); */
-  font-family: var(--fontFamily);
+  /* font-family: var(--fontFamily); */
   direction: rtl;
   text-align: right;
 }
 * {
   box-sizing: border-box;
-  font-family: var(--fontFamily);
+  /* font-family: var(--fontFamily); */
   /* font-size: var(--fontSize); */
   /* color: var(--blackColor); */
 }
@@ -122,7 +122,7 @@ textarea:focus {
 .font-60 {
   font-size: 60px;
 }
-.weight-400 {
+/* .weight-400 {
   font-family: 'cairo-400';
 }
 .weight-500 {
@@ -133,7 +133,7 @@ textarea:focus {
 }
 .weight-700 {
   font-family: 'cairo-700';
-}
+} */
 .purple-color {
   color: var(--purpleColor);
 }
@@ -450,7 +450,7 @@ header {
 
 .testimonial-text {
   color: var(--secondaryBlack);
-  font-family: 'cairo-400';
+  /* font-family: 'cairo-400'; */
 }
 
 .testimonial-author {
