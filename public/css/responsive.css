@@ -1,0 +1,335 @@
+@media (min-width: 1200px) {
+  .steps .steps-img {
+    height: 268px !important;
+  }
+}
+@media (max-width: 1199.98px) {
+  .hero::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 70%;
+    height: 80%;
+    background-image: url('../images/pattern.svg');
+
+    background-size: 606px 635px;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  .navbar-collapse.show {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  .navbar-nav {
+    flex-direction: column !important;
+  }
+
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  .login-btn {
+    display: none !important;
+  }
+  .navbar-collapse .login-btn {
+    display: block !important;
+    margin-top: 1rem;
+  }
+  /* .hero::before {
+    content: '';
+    position: absolute;
+    bottom: -264px;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-image: url('../images/pattern.svg');
+
+    background-size: 606px 635px;
+    background-repeat: no-repeat;
+  } */
+  .slider-p {
+    font-size: 45px;
+  }
+  .logo-col {
+    text-align: center !important;
+  }
+  .footer-logo-div,
+  .social-nav {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-row {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .last-sec-p {
+    width: 100% !important;
+  }
+  .last-sec {
+    padding: 1rem !important;
+  }
+  .stat-box {
+    margin-bottom: 20px !important;
+  }
+  .form-container {
+    width: 90%;
+    background-color: var(--whiteColor);
+    box-shadow: 4px 4px 19.9px 0px rgba(0, 0, 0, 0.25);
+    margin-top: -13.5rem;
+    position: relative;
+  }
+  .sign-up-hero-p {
+    width: 100% !important;
+  }
+  .img-side {
+    display: none;
+  }
+
+  /* إظهار الصورة داخل <li> */
+  .mobile-image {
+    display: none;
+    width: 100%;
+  }
+
+  .list-group-item.active .mobile-image {
+    display: block;
+  }
+  .show-in-mobile {
+    display: flex !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .font-48 {
+    font-size: 34px;
+  }
+  .font-36 {
+    font-size: 32px;
+  }
+  .mobile-image {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-nav {
+    margin: 0 auto !important;
+  }
+  .close-btn {
+    display: none;
+  }
+  .navbar-brand {
+    margin-left: auto !important;
+  }
+  .mobile-image {
+    display: none !important;
+  }
+}
+@media (max-width: 575px) {
+  .cta-section {
+    padding: 0.5rem !important;
+  }
+  .font-14 {
+    font-size: 14px !important;
+  }
+  .font-24 {
+    font-size: 16px !important;
+  }
+  .font-16 {
+    font-size: 14px !important;
+  }
+  .font-18 {
+    font-size: 12px !important;
+  }
+
+  .font-20 {
+    font-size: 18px !important;
+  }
+  .font-30 {
+    font-size: 18px !important;
+    line-height: 2;
+  }
+  .font-36,
+  h2 {
+    font-size: 20px !important;
+  }
+  .font-48 {
+    font-size: 24px !important;
+  }
+  .font-60 {
+    font-size: 38.57px !important;
+  }
+  .hero-btn {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .steps .card-body {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .slider-p {
+    font-size: 30px;
+  }
+  body,
+  footer {
+    overflow-x: hidden;
+  }
+  .success-nums-p {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .last-sec-btn {
+    flex-direction: column;
+  }
+  .last-sec-btn a {
+    width: 100%;
+  }
+  .numbers-row {
+    padding: 0.5rem !important;
+  }
+  /* .swiper-slide {
+    padding: 13px !important;
+  } */
+
+  .hero-row {
+    margin-top: 7rem !important;
+  }
+  .hero::before {
+    /* content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/pattern-mobile.svg') !important;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right; ضع الصورة في الأسفل */
+
+    content: '';
+    background-image: url('../images/pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    left: 0%;
+    position: absolute !important;
+    top: 30%;
+    border-bottom-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+  }
+  .hero.py-5 {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+  .hero a.font-16 {
+    font-size: 14px !important;
+    display: block;
+    width: 100% !important;
+    text-align: center;
+  }
+  .hero {
+    padding-bottom: 0 !important;
+  }
+  .success-nums-div p {
+    font-size: 12px !important;
+  }
+  .success-nums-div {
+    padding: 1rem !important;
+  }
+  .state-number span {
+    font-size: 11.57px !important;
+  }
+  .state-highlight,
+  .number-highlight {
+    font-size: 12px !important;
+  }
+  .success-nums .nums-div {
+    gap: 1.5rem !important;
+  }
+  .success-nums .nums-div .mx-5 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .numbers-row .font-60 {
+    font-size: 30px !important;
+  }
+  .numbers-row-p {
+    text-align: center;
+  }
+  .numbers-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .steps-container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .steps .steps-img {
+    height: auto !important;
+  }
+  .step-link {
+    font-family: 14px !important;
+  }
+  .success-partner {
+    text-align: center;
+  }
+  .success-partner .mx-5 {
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+  }
+  .success-partner .partner-div {
+    height: 69px !important;
+    width: auto;
+  }
+  .cta-section .h2 {
+    text-align: center;
+  }
+  .yellow-btn {
+    display: block;
+    width: 100%;
+  }
+  .cta-section p,
+  .features p,
+  .second-slider p,
+  .last-sec p,
+  .numbers-row p,
+  footer p {
+    font-size: 12px !important;
+  }
+  .card-title {
+    margin-bottom: 0.2rem !important;
+  }
+  .img-side {
+    display: none !important;
+  }
+  .footer li a {
+    font-size: 12px !important;
+  }
+}
+.collapse:not(.show) {
+  display: unset;
+}
