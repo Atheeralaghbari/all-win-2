@@ -3,7 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@font-face {
+/* @font-face {
   font-family: 'cairo-700';
   src: url('../public/fonts/Cairo-Regular.ttf');
 }
@@ -18,7 +18,7 @@
 @font-face {
   font-family: 'cairo-400';
   src: url('../public/fonts/Cairo-Regular.ttf');
-}
+} */
 :root {
   --fontFamily: 'cairo-400';
   --whiteColor: rgba(255, 255, 255, 1);

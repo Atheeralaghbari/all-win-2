@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: 'cairo-700';
   src: url('../fonts/Cairo-Bold.ttf');
 }
@@ -13,7 +13,7 @@
 @font-face {
   font-family: 'cairo-400';
   src: url('../fonts/Cairo-Regular.ttf');
-}
+} */
 :root {
   --fontFamily: 'cairo-400';
   --whiteColor: rgba(255, 255, 255, 1);
