@@ -423,7 +423,7 @@ export default async function Home() {
                 </a>
 
                 <a
-                  href="#"
+                  href="/sign-in"
                   className="inline-block rounded-full bg-[#F4F30E] !text-[#3F20A6] text-base font-normal px-6 py-2 hover:bg-[#F4F30E]"
                 >
                   انضم معنا كتاجر

@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <header className="p-1 rounded-full mb-5 w-full bg-white">
-      {console.log('router', router)}
+      {/* {console.log('router', router)} */}
       <nav className="relative flex items-center justify-between p-0 px-3  min-h-[40px]">
         <a
           href="#"
@@ -121,7 +121,7 @@ export default function Header() {
           </ul>
 
           <a
-            href="#"
+            href="/sign-in"
             className="block w-full text-center lg:w-auto  lg:mt-0 lg:ms-3 px-5 py-2 rounded-full text-base font-semibold login-btn text-black border-0 transition-colors !text-[#F4F30E]"
           >
             تسجيل الدخول
