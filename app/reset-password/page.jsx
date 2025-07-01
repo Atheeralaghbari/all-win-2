@@ -1,7 +1,7 @@
 import { getCountries } from '@/app/lib/data';
 
-import SignIn from '@/app/components/SignIn';
+import PasswordReset from '@/app/components/PasswordReset';
 export default async function page({}) {
   const countries = await getCountries();
-  return <SignIn countries={countries} />;
+  return <PasswordReset countries={countries} />;
 }

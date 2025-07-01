@@ -1,7 +1,7 @@
 import Header from './components/Header'; //
 import Slider from './components/Slider';
 import Feature from './components/Feature';
-// import Link from 'next/link';
+import Link from 'next/link';
 import Script from 'next/script';
 export default async function Home() {
   const data = await fetch(
@@ -415,19 +415,20 @@ export default async function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 last-sec-btn">
-                <a
-                  href="/sign-in"
+                <Link
+                  href={{ pathname: '/sign-in', query: { type: 'marketer' } }}
+                  // href="/sign-in?type=marketer"
                   className="inline-block rounded-full bg-white !text-[#6E38FF] text-base font-normal px-6 py-2 hover:bg-gray-100"
                 >
                   انضم إلينا كمسوق
-                </a>
+                </Link>
 
-                <a
-                  href="/sign-in"
+                <Link
+                  href={{ pathname: '/sign-in', query: { type: 'trader' } }}
                   className="inline-block rounded-full bg-[#F4F30E] !text-[#3F20A6] text-base font-normal px-6 py-2 hover:bg-[#F4F30E]"
                 >
                   انضم معنا كتاجر
-                </a>
+                </Link>
               </div>
             </div>
           </div>

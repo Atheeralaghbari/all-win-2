@@ -10,19 +10,7 @@ import '../public/css/owl.carousel.min.css';
 import '../public/css/owl.theme.default.min.css';
 
 import './globals.css';
-
-import Head from 'next/head';
 import Script from 'next/script';
-
-// const geistSans = Geist({
-//   variable: '--font-geist-sans',
-//   subsets: ['latin'],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: '--font-geist-mono',
-//   subsets: ['latin'],
-// });
 
 export const metadata: Metadata = {
   title: 'Create Next App',

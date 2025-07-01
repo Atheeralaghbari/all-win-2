@@ -1,13 +1,13 @@
 'use client';
 import { useState, useRef } from 'react';
+import { useRouter } from 'next/navigation';
 export default function AccountType() {
-  const [activeTab, setActiveTab] = useState('tab1');
-
+  const [activeTab, setActiveTab] = useState('trader');
+  const router = useRouter();
   const inputs = useRef([]);
 
   const handleChange = (index) => (event) => {
     if (event.target.value.length >= 1) {
-      console.log('1', index, inputs);
       if (index <= inputs.current.length - 1) {
         inputs.current[index + 1].focus();
       }
@@ -40,28 +40,32 @@ export default function AccountType() {
                 <button
                   className={
                     ' py-3  text-end px-4 border-[#DAE1E9]   border-1 !rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 !text-lg ' +
-                    (activeTab == 'tab1'
+                    (activeTab == 'trader'
                       ? ' bg-[#E3DCFF33] text-[#6E38FF] !border-[#6E38FF]'
                       : '')
                   }
-                  onClick={() => setActiveTab('tab1')}
+                  onClick={() => setActiveTab('trader')}
+                  // onClick={() => router.push('/sign-in?type="trader')}
                 >
                   حساب تاجر
                 </button>
                 <button
                   className={
                     ' py-3  text-end px-4  border-[#DAE1E9] border-1 !rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 !text-lg ' +
-                    (activeTab == 'tab2'
+                    (activeTab == 'marketer'
                       ? ' bg-[#E3DCFF33] text-[#6E38FF] !border-[#6E38FF] '
                       : '')
                   }
-                  onClick={() => setActiveTab('tab2')}
+                  onClick={() => setActiveTab('marketer')}
                 >
                   حساب وسيط معلن
                 </button>
               </div>
               <div className="flex justify-start gap-3 mt-2 flex-row-reverse">
-                <button className="relative  py-2 px-3 bg-[#6E38FF] text-white !rounded-md hover:bg-[#6E38FF] flex justify-center">
+                <button
+                  className="relative  py-2 px-3 bg-[#6E38FF] text-white !rounded-md hover:bg-[#6E38FF] flex justify-center"
+                  onClick={() => router.push('/sign-up?type=' + activeTab)}
+                >
                   التالي
                 </button>
                 <button className=" relative py-2 px-3 bg-white text-[#6E38FF] !rounded-md hover:bg-white border flex justify-center">
@@ -102,58 +106,6 @@ export default function AccountType() {
               className="!w-20 !h-20"
             />
           </div>
-        </div>
-      </div>
-      <div
-        id="myModal"
-        className="modal  items-center justify-center !fixed w-full h-full z-50 top-0 right-0 bottom-0 m-auto left-0 !bg-[#00000057] !flex "
-      >
-        <div className="bg-white rounded-lg shadow-lg p-6 w-1/3 mx-auto flex justify-center flex-col items-center">
-          <img
-            src="/images/message-received.svg"
-            className="w-40 h-40"
-          />
-          <h2 className="!text-lg font-semibold">
-            لقد ارسلنا رمز التحقق إلى رقم هاتفك!
-          </h2>
-          <p className="mt-2">
-            ارسلنا رمز التحقق للرقم
-            <span className="text-[#6E38FF]"> +9665418742 :</span>
-          </p>
-          <div className="flex space-x-2">
-            {Array.from({ length: 4 }).map((_, index) => (
-              <input
-                key={index}
-                type="text"
-                maxLength="1"
-                ref={(el) => (inputs.current[index] = el)}
-                className="w-12 h-12 text-center text-2xl border border-gray-300 rounded focus:outline-none focus:border-blue-500"
-                onChange={handleChange(index)}
-                onKeyDown={handleKeyDown(index)}
-              />
-            ))}
-          </div>
-          <div className="flex justify-between w-full">
-            <button className=" relative py-2 px-3 bg-[#E3DCFF33] text-[#6E38FF] !rounded-md hover:bg-white border flex justify-center">
-              لم يصلني الرمز!
-            </button>
-            <div className="flex justify-start gap-3 flex-row-reverse">
-              <button className="relative  py-2 px-3 bg-[#6E38FF] text-white !rounded-md hover:bg-[#6E38FF] flex justify-center">
-                التالي
-              </button>
-              <button className=" relative py-2 px-3 bg-white text-[#6E38FF] !rounded-md hover:bg-white border flex justify-center">
-                عودة
-              </button>
-            </div>
-          </div>
-          {/* <div className="mt-4 flex justify-end"> */}
-          {/* <button
-              id="closeModal"
-              className="bg-red-500 text-white px-4 py-2 rounded"
-            >
-              Close
-            </button> */}
-          {/* </div> */}
         </div>
       </div>
     </div>
